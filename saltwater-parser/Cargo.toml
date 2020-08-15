@@ -26,3 +26,4 @@ proptest-derive = "0.1"
 
 [features]
 codegen = ["cranelift-codegen", "cranelift-object"]
+jit = []

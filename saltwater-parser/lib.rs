@@ -13,13 +13,6 @@ use std::rc::Rc;
 
 pub use codespan;
 
-#[cfg(all(feature = "color-backtrace", not(feature = "cc")))]
-compile_error!(concat!(
-    "The color-backtrace feature does nothing unless used by the `",
-    env!("CARGO_PKG_DIR"),
-    "` binary."
-));
-
 /// The `Source` type for `codespan::Files`.
 ///
 /// Used to store extra metadata about the file, like the absolute filename.
